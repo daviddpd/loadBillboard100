@@ -1,0 +1,5 @@
+I would like to create a python script (program) that will be giving multiple JSON files, like the sample @1996-01-27.json, connect to a remote MySQL/MariaDB database, and insert the song and artist containted in the data dictionary. See the @schema.sql file for the needed schema. Make the user password and host and database name command line arguments.  Make sure to support SSL/TLS for the database conenction. Use a many package as possible.  Create the requirements.txt for pip usuage.  Be able to take in multiple JSON files - as a command line argument as a directory or glob or files (can assume the globing will be expanded by the shell). 
+
+Note, the schema makes the artists and song a unqie key.  We can let MySQL/MariaDB handle the duplicates, as there will be a lot, so an failure on insert of a duplicate key IS NOT A PROGRAM failue.  Only report this in debug or verbose mode (make a command line swithc for these too).   Handle this error and move on to the next item in the array. 
+
+Save this prompt to a new file called chat.txt. 
